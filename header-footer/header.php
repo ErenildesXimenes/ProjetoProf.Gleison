@@ -15,18 +15,18 @@
       <a class="navbar-brand" href="#">SESSÃO CINE</a>
     </div>
      <ul class="nav navbar-nav">
-      <li class="active"><a href="#">HOME</a></li>
+      <li class="active"><a href="../user/home">HOME</a></li>
       <!--li><a href="#">HOME</a></li>
       <li><a href="#">Page 2</a></li-->
     </ul>
     <ul class="nav navbar-nav navbar-right">
     <?php 
     if(!(isset($_SESSION['logado']))){
-      echo "<li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> Sign Up</a></li>
+      echo "<li><a href=\"../auth/resgister\"><span class=\"glyphicon glyphicon-user\"></span> Sign Up</a></li>
       <li><a href=\"../auth/login\"><span class=\"glyphicon glyphicon-log-in\"></span> Login</a></li>";
     }
     else{
-      echo "<li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span>".$_SESSION['logado']."</a></li>
+      echo "<li><a href=\"../user/home\"><span class=\"glyphicon glyphicon-user\"></span>".$_SESSION['logado']."</a></li>
       <li><a href=\"../auth/logout\"><span class=\"glyphicon glyphicon-log-out\"></span> Sair</a></li>";
     }
 

@@ -27,6 +27,7 @@ include '../header-footer/header.php';
             else{
                 $_SESSION['logado'] = $row['nome'];
                 $_SESSION['tipo'] = 'use';
+                $_SESSION['idUser'] = $row['id'];
                 header('location:../user/home');
             }
         }

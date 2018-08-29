@@ -23,7 +23,7 @@
     <?php 
     session_start();
     if(!(isset($_SESSION['logado']))){
-      echo "<li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> Sign Up</a></li>
+      echo "<li><a href=\"auth/resgister\"><span class=\"glyphicon glyphicon-user\"></span> Sign Up</a></li>
       <li><a href=\"auth/login\"><span class=\"glyphicon glyphicon-log-in\"></span> Login</a></li>";
     }
     else{
